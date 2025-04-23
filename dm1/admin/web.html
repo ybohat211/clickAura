@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Des/Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css_file/style.css" />
+    <link rel="stylesheet" href="../css_file/navbar.css" />
+    <link rel="stylesheet" href="../service/service.css" />
+</head>
+
+<style>
+    /* .software-dev-heading-image {
+        width: 100vw;
+        height: 50vh;
+        display: block;
+    } */
+</style>
+
+<body>
+
+    <header class="header" style="background-color: #0E0E0E;">
+        <div class="container nav-container ">
+            <div class="logo"><img src="../images_and_ideo/logo.png" width="100px" alt="Logo"></div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="indx.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" id="contactBtn">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="custom-modal-overlay" id="contactModal">
+        <div class="custom-modal">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Let's Connect</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="firstName" placeholder="First Name" required />
+                <input type="text" id="lastName" placeholder="Last Name" required />
+                <input type="tel" id="mobile" placeholder="Mobile" required maxlength="10" />
+                <input type="email" id="email" placeholder="Email" />
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ⭐ Software Development SECTION START -->
+    <section class="section_all text-light py-5 mt-5" id="software-development">
+        <div class="container p-0 ">
+            <div class="text-center" data-aos="fade-up">
+                <!-- <img src="../images_and_ideo/SMM.png" alt="Software Development"
+                    class="img-fluid mb-4 software-dev-heading-image" data-aos="fade-down" /> -->
+                <div class="water-effect-container">
+                    <img src="../images_and_ideo/web_development.jpg" alt="Software Development"
+                        class="img-fluid mb-4 software-dev-heading-image" data-aos="fade-down" />
+                    <div class="water-overlay"></div>
+                </div>
+
+                <h3 class="display-4 fw-bold text-yellow">Transform Your Ideas into Scalable Solutions</h3>
+                <p class="lead text-light">Custom software development services that drive innovation and bring your
+                    business vision to life.</p>
+                <a href="#contact" class="btn btn-warning px-4 py-2 mt-3">Request Software Development Proposal</a>
+            </div>
+
+            <div class="row g-4 text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="container my-5">
+                    <!-- Section Block -->
+                    <div class="card-black mb-5">
+                        <div class="row align-items-center">
+                            <!-- Content Column -->
+                            <div class="col-12 col-md-6 mb-3 mb-md-0" style="text-align: justify;">
+                                <h2 class="text-yellow">UI/UX Design</h2>
+                                <p>UI/UX design is the heart of any successful website. It goes beyond aesthetics,
+                                    focusing on how users interact with digital content. A seamless experience can make
+                                    users feel comfortable and engaged.
+
+                                    User Interface (UI) deals with the visual elements—buttons, colors, typography, and
+                                    layout. It's all about creating an attractive environment that draws people in.
+
+                                    On the other hand, User Experience (UX) is about functionality and ease of use.
+                                    Designers need to understand user behavior to create intuitive navigation paths that
+                                    guide visitors effortlessly through a site.</p>
+                            </div>
+                            <!-- Image Column -->
+                            <div class="col-12 col-md-6">
+                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+                                    class="img-fluid rounded shadow" alt="Image Description">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reverse Section -->
+                    <div class="card-black mb-5">
+                        <div class="row align-items-center flex-md-row-reverse">
+                            <!-- Content Column -->
+                            <div class="col-12 col-md-6 mb-3 mb-md-0" style="text-align: justify;">
+                                <h2 class="text-yellow">Frontend Development</h2>
+                                <p>Frontend development is the bridge between users and digital experiences. It focuses
+                                    on what people see and interact with on a website or application. This domain
+                                    revolves around languages like HTML, CSS, and JavaScript.
+
+                                    HTML lays the groundwork by structuring content. It's like the skeleton of your
+                                    website. Then comes CSS, which adds style and flair to that structure, making
+                                    everything visually appealing.
+
+                                    JavaScript introduces interactivity. Whether it's animations or dynamic forms, it
+                                    enhances user engagement significantly. Together, these technologies create an
+                                    engaging environment for visitors.
+                                </p>
+                            </div>
+                            <!-- Image Column -->
+                            <div class="col-12 col-md-6">
+                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+                                    class="img-fluid rounded shadow" alt="Image Description">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Block Again -->
+                    <div class="card-black mb-5">
+                        <div class="row align-items-center">
+                            <!-- Content Column -->
+                            <div class="col-12 col-md-6 mb-3 mb-md-0" style="text-align: justify;">
+                                <h2 class="text-yellow">Backend Integration</h2>
+                                <p>Backend integration is the backbone of any web application. It connects the front end
+                                    with databases, servers, and external services. This seamless communication ensures
+                                    that users enjoy a smooth experience.
+
+                                    Using programming languages like Java, developers build robust APIs that facilitate
+                                    data exchange. These APIs are crucial in managing user requests and delivering
+                                    timely responses.
+
+                                    Security also plays a significant role here. Protecting sensitive information must
+                                    be prioritized during backend development to prevent breaches.</p>
+                            </div>
+                            <!-- Image Column -->
+                            <div class="col-12 col-md-6">
+                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+                                    class="img-fluid rounded shadow" alt="Image Description">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-black mb-5">
+                        <div class="row align-items-center">
+                            <!-- Image Column -->
+                            <div class="col-12 col-md-6">
+                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+                                    class="img-fluid rounded shadow" alt="Image Description">
+                            </div>
+                            <!-- Content Column -->
+                            <div class="col-12 col-md-6 mb-3 mb-md-0" style="text-align: justify;">
+                                <h2 class="text-yellow">Mobile Responsiveness</h2>
+                                <p>Mobile responsiveness is a critical component of web design today. With the rise of
+                                    smartphones and tablets, ensuring your website performs well across various screen
+                                    sizes is non-negotiable. A responsive design adapts seamlessly to different devices,
+                                    enhancing user experience significantly.
+
+                                    Using CSS frameworks like Bootstrap can simplify this process. They allow developers
+                                    to create fluid grids and layouts that adjust automatically. This means no more
+                                    pinching or zooming for users—just smooth navigation right from their mobile
+                                    screens.
+
+                                    Moreover, Google considers mobile-friendliness in its rankings. A site that's not
+                                    optimized for mobile could lose valuable traffic and visibility in search results.
+                                    Hence, focusing on mobile responsiveness isn’t just good practice; it’s essential
+                                    for any successful web designing strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 align-items-center" data-aos="fade-right">
+                <div class="col-md-6">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                        alt="Software Development Illustration" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3 text-yellow">Why Choose Our Software Development Services</h2>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-2">⚡ Agile development approach for rapid project execution</li>
+                        <li class="mb-2">🛠️ Cutting-edge technologies for scalable solutions</li>
+                        <li class="mb-2">📱 Expertise in developing both web and mobile apps</li>
+                        <li class="mb-2">🔒 Strong emphasis on security and compliance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5" data-aos="zoom-in">
+                <div class="col-md-8 mx-auto">
+                    <div class="p-4 rounded bg-black shadow-sm border border-dark">
+                        <blockquote class="blockquote text-center text-white">
+                            <p class="mb-3">"Thanks to their team, we developed a custom solution that transformed our
+                                workflow and boosted productivity. Highly recommend!"</p>
+                            <footer class="blockquote-footer text-white">— Michael Johnson, CTO at Tech Innovators
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ⭐ Software Development SECTION END -->
+
+    <!-- 🔗 FOOTER -->
+    <footer>
+        <div class="container px-5 py-5">
+            <div class="row footer-section-top">
+                <!-- Brand + Social -->
+                <div class="col-12 col-md-4 footer-section-brandName">
+                    <!-- Middle Divider + Logo -->
+                    <div class="d-flex  footer-section-middle">
+                        <div class=" footer-section-middle-brandLogo">
+                            <img src="../images_and_ideo/logo.png" alt="Footer Brand Logo" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-auto d-flex gap-3 mb-2 mb-md-0">
+                        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- <p>Your Company</p> -->
+                    <p class="my-0 footer-section-brandSlogan">Building Brands that Speak.</p>
+                </div>
+
+                <!-- Column One -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-one">
+                    <p class="my-0 mb-3 column-title">Company</p>
+                    <p class="my-0"><a href="#">About Us</a></p>
+                    <p class="my-0"><a href="#">Careers</a></p>
+                    <p class="my-0"><a href="#">Blog</a></p>
+                    <p class="my-0"><a href="#">Contact</a></p>
+                </div>
+
+                <!-- Column Two -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-two">
+                    <p class="my-0 mb-3 column-title">Services</p>
+                    <p class="my-0"><a href="#">SEO</a></p>
+                    <p class="my-0"><a href="#">Content</a></p>
+                    <p class="my-0"><a href="#">Design</a></p>
+                    <p class="my-0"><a href="#">Development</a></p>
+                </div>
+
+                <!-- Column Three -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-three">
+                    <p class="my-0 mb-3 column-title">Resources</p>
+                    <p class="my-0"><a href="#">Case Studies</a></p>
+                    <p class="my-0"><a href="#">Pricing</a></p>
+                    <p class="my-0"><a href="#">FAQs</a></p>
+                    <p class="my-0"><a href="#">Help Center</a></p>
+                </div>
+
+                <!-- Column Four -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-four">
+                    <p class="my-0 mb-3 column-title">Legal</p>
+                    <p class="my-0"><a href="#">Privacy Policy</a></p>
+                    <p class="my-0"><a href="#">Terms</a></p>
+                    <p class="my-0"><a href="#">Cookies</a></p>
+                    <p class="my-0"><a href="#">License</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="../service/service.js"></script>
+
+    <!-- 📞 Floating Contact Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:9871763821" class="floating-btn call-btn" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/919871763821" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- Instagram Floating Button -->
+        <a href="https://instagram.com/aadi.03_" target="_blank" class="floating-btn insta-icon-btn"
+            title="Follow on Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                style="width: 50px; border-radius: 50%;" />
+        </a>
+    </div>
+</body>
+
+</html>

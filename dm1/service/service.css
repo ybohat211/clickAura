@@ -1,0 +1,40 @@
+:root {
+    --bg-dark: #0E0E0E;
+    --accent-yellow: #FFD700;
+    --accent-yellow-dark: #FFC300;
+    --text-light: #F5F5F5;
+    --text-muted: #BBBBBB;
+    --border-dark: #2B2B2B;
+    --heart-red: #FF5555;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: red;
+}
+
+footer {
+    background: var(--bg-dark);
+    padding-top: 60px;
+    color: var(--text-light);
+}
+
+
+#seo .seo-card {
+    transition: 0.3s ease;
+}
+
+#seo .seo-card:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}

@@ -1,0 +1,87 @@
+:root {
+    --bg-dark: #0E0E0E;
+    --accent-yellow: #FFD700;
+    --text-light: #F5F5F5;
+    --border-dark: #2B2B2B;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: red; /* Adjust as needed */
+}
+
+footer {
+    background: var(--bg-dark);
+    padding-top: 60px;
+    color: var(--text-light);
+}
+
+.section_all {
+    background-color: white;
+    color: #0E0E0E;
+    padding: 80px 0;
+}
+
+.text-custom,
+.text-yellow {
+    color: var(--accent-yellow);
+}
+
+.section-title-border {
+    background-color: var(--accent-yellow);
+    height: 2px;
+    width: 60px;
+}
+
+.section_title_all h3 {
+    font-size: 32px;
+    color: var(--text-light);
+}
+
+.section_subtitle {
+    letter-spacing: 0.4px;
+    line-height: 28px;
+    max-width: 600px;
+    color: white;
+}
+
+.about_icon i {
+    font-size: 22px;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    display: inline-block;
+    background: var(--accent-yellow);
+    color: var(--bg-dark);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+    transition: 0.3s;
+}
+
+.about_icon i:hover {
+    background-color: var(--bg-dark);
+    color: var(--accent-yellow);
+    box-shadow: 0 0 10px var(--accent-yellow);
+}
+
+.about_content_box_all {
+    padding: 28px;
+    background-color: #1A1A1A;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.about_content_box_all:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+

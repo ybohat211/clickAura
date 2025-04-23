@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_file/style.css" />
+    <link rel="stylesheet" href="css_file/navbar.css" />
+</head>
+
+<body>
+
+    <!-- 🌐 HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo"><img src="images_and_ideo/logo.png" alt=""></div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="../dm1/admin/about.html">About</a></li>
+                    <li><a href="#" id="contactBtn">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🔗 MODAL SECTION -->
+    <div class="custom-modal-overlay" id="contactModal">
+        <div class="custom-modal">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Let's Connect</h2>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="firstName" placeholder="First Name" required />
+                <input type="text" id="lastName" placeholder="Last Name" required />
+                <input type="tel" id="mobile" placeholder="Mobile" required maxlength="10" />
+                <input type="email" id="email" placeholder="Email" />
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 🚀 HERO SECTION -->
+    <section id="hero" class="section hero-section">
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="images_and_ideo/video.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1>We Build Brands That Speak</h1>
+            <p>Your trusted partner for Digital Marketing & Website Building.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- 💼 SERVICES SECTION -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="services-heading text-center">Our Services</h2>
+            <div class="row justify-content-center">
+                <!-- CARD 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                    <a href="../dm1/admin/softwareDev.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-3 text-center">
+                            <div class="cat-svg-3">
+                                <img src="images_and_ideo/panda.gif" alt="Peeking Cat 2" class="cat-animation" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/906/906343.png" alt="Software Dev" />
+                            </div>
+                            <h4>Software Development</h4>
+                            <p>Custom software solutions tailored for your business needs.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                    <a href="../dm1/admin/web.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-1 text-center">
+                            <div class="cat-svg-1">
+                                <img src="images_and_ideo/dear.gif" alt="Peeking Cat 3" class="cat-animation"
+                                    style="width: 100px;" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Web Design" />
+                            </div>
+                            <h4>Web Design & Development</h4>
+                            <p>Modern, responsive websites that engage your audience and grow your business.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                    <a href="../dm1/admin/seo.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-1 text-center">
+                            <div class="cat-svg-1">
+                                <img src="images_and_ideo/walk.gif" alt="Peeking Cat 1" class="cat-animation" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Web Design" />
+                            </div>
+                            <h4>SEO</h4>
+                            <p>Improve your search engine rankings with result-driven SEO solutions.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                    <a href="../dm1/admin/socialMedia.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-3 text-center">
+                            <div class="cat-svg-3">
+                                <img src="images_and_ideo/dear.gif" alt="Peeking Cat 3" class="cat-animation"
+                                    style="width: 100px;" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Social Media" />
+                            </div>
+                            <h4>Social Media Marketing</h4>
+                            <p>Efficiently manage all your social platforms from one place.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                    <a href="../dm1/admin/content.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-2 text-center">
+                            <div class="cat-svg-2">
+                                <img src="images_and_ideo/panda.gif" alt="Peeking Cat 2" class="cat-animation" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/906/906343.png"
+                                    alt="Content Creation" />
+                            </div>
+                            <h4>Content Marketing</h4>
+                            <p>Engaging and impactful content to attract and convert your audience.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                    <a href="../dm1/admin/graphicDesign.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-2 text-center">
+                            <div class="cat-svg-2">
+                                <img src="images_and_ideo/walk.gif" alt="Peeking Cat 1" class="cat-animation" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png"
+                                    alt="Graphic Design" />
+                            </div>
+                            <h4>Graphic <br>Designing</h4>
+                            <p>Eye-catching visuals and designs to power up your branding.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                    <a href="../dm1/admin/analyticsReport.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-2 text-center">
+                            <div class="cat-svg-2">
+                                <img src="images_and_ideo/flying.gif" alt="Peeking Cat 1" class="cat-animation" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Analytics" />
+                            </div>
+                            <h4>Analytics & Reporting</h4>
+                            <p>Track, measure, and analyze your performance with real-time insights and custom reports.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                    <a href="../dm1/admin/googleAdword.html" class="text-decoration-none text-dark w-100">
+                        <div class="service-card card-1 text-center">
+                            <div class="cat-svg-1">
+                                <img src="images_and_ideo/flying.gif" alt="Peeking Cat 1" class="cat-animation" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="SMO" />
+                            </div>
+                            <h4>Google <br> Adwords</h4>
+                            <p>Boost your visibility through effective SMO strategies and content.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🖼️ PORTFOLIO SECTION -->
+    <section id="portfolio" class="section portfolio-section ">
+        <div class="container text-center">
+            <h2 class="services-heading text-center">Our Work</h2>
+        </div>
+        <div id="image-slider">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/keyboard-tea-cup-apple-office-stationeries-black-background_23-2148042011.jpg"
+                        alt="Nature 1">
+                    <div class="content">
+                        <h2>Explore Nature</h2>
+                        <button>Learn More</button>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni atque porro sed quae illum
+                            incidunt. Numquam pariatur quidem laborum nihil!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg" alt="Nature 2">
+                    <div class="content">
+                        <h2>Discover Peaks</h2>
+                        <button>Discover</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://st3.depositphotos.com/27518956/31899/i/450/depositphotos_318992444-stock-photo-overhead-shot-of-dark-stylish.jpg"
+                        alt="Nature 3">
+                    <div class="content">
+                        <h2>Peace & Beauty</h2>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container-container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-grid">
+                    <div class="image-container " id="image-container"></div>
+                    <div class="testimonial-content">
+                        <div>
+                            <h3 class="name" id="name"></h3>
+                            <p class="designation" id="designation"></p>
+                            <p class="quote" id="quote"></p>
+                        </div>
+                        <div class="arrow-buttons">
+                            <button class="arrow-button prev-button" id="prev-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                </svg>
+                            </button>
+                            <button class="arrow-button next-button" id="next-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 CTA SECTION -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <div class="avatars-rating">
+                <img src="https://i.pravatar.cc/40?img=1" alt="User 1">
+                <img src="https://i.pravatar.cc/40?img=2" alt="User 2">
+                <img src="https://i.pravatar.cc/40?img=3" alt="User 3">
+                <img src="https://i.pravatar.cc/40?img=4" alt="User 4">
+                <div class="stars">★★★★★</div>
+            </div>
+            <h2>Ready to start your project?</h2>
+            <p>Our happy clients rated us 5 stars. Let's bring your vision to life — design, develop and grow with us.
+            </p>
+            <!-- <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-btn">Get In Touch</a> -->
+            <a href="https://wa.me/919871763821" target="_blank" class="whatsapp-btn">Get In Touch</a>
+        </div>
+        <img src="images_and_ideo/ctaGirl.jpg" alt="CTA Illustration" class="cta-illustration">
+    </section>
+
+    <!-- 🔗 FOOTER -->
+    <footer>
+        <div class="container px-5 py-5">
+            <div class="row footer-section-top">
+                <!-- Brand + Social -->
+                <div class="col-12 col-md-4 footer-section-brandName">
+                    <!-- Middle Divider + Logo -->
+                    <div class="d-flex  footer-section-middle">
+                        <div class=" footer-section-middle-brandLogo">
+                            <img src="images_and_ideo/logo.png" alt="Footer Brand Logo" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-auto d-flex gap-3 mb-2 mb-md-0">
+                        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- <p>Your Company</p> -->
+                    <p class="my-0 footer-section-brandSlogan">Building Brands that Speak.</p>
+                </div>
+
+                <!-- Column One -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-one">
+                    <p class="my-0 mb-3 column-title">Company</p>
+                    <p class="my-0"><a href="#">About Us</a></p>
+                    <p class="my-0"><a href="#">Careers</a></p>
+                    <p class="my-0"><a href="#">Blog</a></p>
+                    <p class="my-0"><a href="#">Contact</a></p>
+                </div>
+
+                <!-- Column Two -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-two">
+                    <p class="my-0 mb-3 column-title">Services</p>
+                    <p class="my-0"><a href="#">SEO</a></p>
+                    <p class="my-0"><a href="#">Content</a></p>
+                    <p class="my-0"><a href="#">Design</a></p>
+                    <p class="my-0"><a href="#">Development</a></p>
+                </div>
+
+                <!-- Column Three -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-three">
+                    <p class="my-0 mb-3 column-title">Resources</p>
+                    <p class="my-0"><a href="#">Case Studies</a></p>
+                    <p class="my-0"><a href="#">Pricing</a></p>
+                    <p class="my-0"><a href="#">FAQs</a></p>
+                    <p class="my-0"><a href="#">Help Center</a></p>
+                </div>
+
+                <!-- Column Four -->
+                <div class="col-6 col-md-2 py-3 footer-section-top-column-four">
+                    <p class="my-0 mb-3 column-title">Legal</p>
+                    <p class="my-0"><a href="#">Privacy Policy</a></p>
+                    <p class="my-0"><a href="#">Terms</a></p>
+                    <p class="my-0"><a href="#">Cookies</a></p>
+                    <p class="my-0"><a href="#">License</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Include AOS Script before closing body -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- 📞 Floating Contact Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:8377055000" class="floating-btn call-btn" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/8377055000" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- Instagram Floating Button -->
+        <a href="https://instagram.com/aadi.03_" target="_blank" class="floating-btn insta-icon-btn"
+            title="Follow on Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                style="width: 50px; border-radius: 50%;" />
+        </a>
+    </div>
+
+
+</body>
+
+</html>
